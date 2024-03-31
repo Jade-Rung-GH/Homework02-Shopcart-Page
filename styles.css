@@ -1,0 +1,402 @@
+/* Global */
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* header */
+
+header {
+  /* background-color: aqua; */
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid silver;
+  background-color: white;
+  box-shadow: 0px 27px 10px -21px rgba(0, 0, 0, 0.1);
+}
+
+.container-left,
+.container-center,
+.container-right {
+  /* border: 2px solid orange; */
+  /* margin-inline: 5%; */
+  display: flex;
+
+}
+
+/* left menu */
+
+.container-left {
+  flex-direction: row;
+  align-items: end;
+  width: auto;
+  margin-left: 16px;
+}
+
+.shop-logo {
+  padding-bottom: 8px;
+}
+
+.shop-name {
+  padding-bottom: 16px;
+}
+
+.shop-name h1,
+span {
+  font-size: 16px;
+  display: inline;
+}
+
+/* center menu */
+
+.container-center {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+  width: 40%;
+  /* width: auto; */
+}
+
+.container-center h1 {
+  display: inline;
+  font-size: 16px;
+  /* background-color: red; */
+}
+
+.container-center .container-aboutus,
+.container-payment,
+.container-profile {
+  display: flex;
+  padding: 16px;
+  justify-content: center;
+  flex-grow: 1;
+  flex-shrink: 0;
+  z-index: 2;
+}
+
+.container-center .container-aboutus:hover,
+.container-payment:hover,
+.container-profile:hover {
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: #f0f2f5;
+}
+
+/* right menu */
+
+.container-right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-items: center;
+  /* width: auto; */
+}
+
+.container-right h1 {
+  display: flex;
+  font-size: 16px;
+  /* background-color: red; */
+}
+
+.container-right, .search, .cart, .login,
+.signup {
+  display: flex;
+  padding: 8px;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+.container-right, .search:hover, .cart:hover, .login:hover,
+.signup:hover {
+  cursor: pointer;
+  z-index: 3;
+}
+
+.login {
+  border-right: 2px solid silver;
+  padding-right: 16px;
+}
+
+.signup {
+  padding-left: 16px;
+}
+
+/* Body Section */
+
+body {
+  background-color: #eee;
+
+}
+
+.left1 {
+  display: inline-flex;
+  /* background-color: purple; */
+  width: 49%;
+  height: 80vh;
+  position: relative;
+  bottom: 70px;
+}
+
+.right2 {
+  display: inline-flex;
+  /* background-color: green; */
+  width: 49%;
+  height: 80vh;
+}
+
+
+/* Left Side of the Page */
+
+.screenleft {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: space-between;
+  width: 90%;
+  position: relative;
+  left: 100px;
+  bottom: 80px;
+}
+
+.screenleft div {
+  /* background-color: whitesmoke; */
+  border-radius: 15px;
+  /* border: none; */
+}
+
+.mycart {
+  position: relative;
+  left: 90px;
+}
+
+.item1, .item2 {
+  display: flex;
+  position: relative;
+  width: 90%;
+  height: 45%;
+  /* margin-left: 30px; */
+  flex-shrink: 0;
+}
+
+/* Item 1 */
+
+.item1 {
+  display: flex;
+  align-items: center;
+  justify-content:left;
+  gap: 36px;
+  background-color: white;
+}
+
+.delete1 {
+  border: 1px solid #00bd1f;
+  border-radius: 50%;
+  padding: 2px;
+  padding-top: 4px;
+  margin-left: 24px;
+  /* position: relative; */
+  /* right: 60px; */
+}
+
+.app1 img, select {
+  border-radius: 15px;
+  text-align: center;
+}
+
+label {
+  font-size: 24px;
+}
+
+.pricesub {
+  display: flex;
+  justify-content: center;
+  padding-top: 8px;
+  color: grey;
+}
+
+.select1 {
+  text-align: center;
+  position: relative;
+  right: 15px;
+  bottom: 60px;
+}
+
+select {
+  margin-top: 8px;
+}
+
+/* Item 2 */
+
+.item2 {
+  display: flex;
+  align-items: center;
+  justify-content:left;
+  gap: 36px;
+  background-color: white;
+}
+
+.delete2 {
+  border: 1px solid #00bd1f;
+  border-radius: 50%;
+  padding: 2px;
+  padding-top: 4px;
+  margin-left: 24px;
+  /* position: relative; */
+  /* right: 60px; */
+}
+
+.app2 img, select {
+  border-radius: 15px;
+  text-align: center;
+}
+
+.select2 {
+  text-align: center;
+  position: relative;
+  right: 15px;
+  bottom: 60px;
+}
+
+.doprice {
+  display: flex;
+  justify-content: center;
+  padding-top: 8px;
+  color: grey;
+}
+
+/* Right Side of the Page */
+
+.screenright {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  bottom: 80px;
+
+
+}
+
+.order-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  width: 40vw;
+  height: 45vh;
+  border-radius: 15px;
+}
+
+.order-info {
+  display: flex;
+  flex-direction: column;
+  height: 55%;
+  padding-bottom: 25px;
+  /* background-color: red; */
+
+}
+
+.order-info h2 {
+  /* color: blue; */
+  padding: 25px 0px;
+  padding-left: 20px;
+}
+
+.subtotal {
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  padding-bottom: 10px;
+}
+
+.subtotal h3, h4 {
+  color: grey;
+  padding: 0px 20px;
+  /* background-color: red; */
+}
+
+
+.order-info {
+  border-bottom: 1px solid silver;
+  width: 95%;
+}
+
+.promotion {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  margin-left: 20px;
+  gap: 32px;
+  
+}
+
+.promofield input {
+  padding: 12px;
+  width: 20vw;
+  border-radius: 5px;
+  border: 1px solid silver;
+}
+
+.apply-button input {
+  font-weight: bold;
+  width: 10vw;
+  padding: 12px;
+  border-radius: 10px;
+  color: #00bd1f;
+  border: 1px solid #00bd1f;
+  background-color: white;
+}
+
+.apply-button input:hover {
+  cursor: pointer;
+  background-color: #60ef91;
+  border-radius: 10px;
+}
+
+.totalpayment {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.total {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 30px;
+}
+
+.total h1 {
+  color: #00bd1f;
+}
+
+.total h2 {
+  color: grey;
+}
+
+.login-checkout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  height: 25%;
+  background-color: #60ef91;
+  border-radius: 10px;
+}
+
+.login-checkout h1 {
+  font-size: 20px;
+  color: grey;
+}
+
+.login-checkout:hover {
+  cursor: pointer;
+  background-color: #00ff44;
+  border-radius: 10px;
+}

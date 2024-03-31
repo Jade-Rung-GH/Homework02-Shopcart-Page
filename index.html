@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles.css">
+  <title>Shopping Cart</title>
+</head>
+
+<body>
+  <header>
+    <div class="container-left">
+      <div class="shop-logo">
+        <svg fill="#000000" width="30px" height="30px" viewBox="0 0 24 24" id="twitch" data-name="Flat Color"
+          xmlns="http://www.w3.org/2000/svg" class="icon flat-color">
+          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+          <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+          <g id="SVGRepo_iconCarrier">
+            <path id="primary"
+              d="M20,2H4A2,2,0,0,0,2,4V16a2,2,0,0,0,2,2H5v3a1,1,0,0,0,.62.92A.84.84,0,0,0,6,22a1,1,0,0,0,.71-.29L10.41,18H16a1,1,0,0,0,.71-.29l5-5A1,1,0,0,0,22,12V4A2,2,0,0,0,20,2Z"
+              style="fill: #ade0ff;"></path>
+            <path id="secondary"
+              d="M15,13a1,1,0,0,1-1-1V8a1,1,0,0,1,2,0v4A1,1,0,0,1,15,13ZM9,13a1,1,0,0,1-1-1V8a1,1,0,0,1,2,0v4A1,1,0,0,1,9,13Z"
+              style="fill: #2cba5d;"></path>
+          </g>
+        </svg>
+      </div>
+      <div class="shop-name">
+        <h1>Jade</h1><span>Shop</span>
+      </div>
+    </div>
+    <div class="container-center">
+      <div class="container-aboutus">
+        <h1>About Us</h1>
+      </div>
+      <div class="container-payment">
+        <h1>Payment</h1>
+      </div>
+      <div class="container-profile">
+        <h1>Profile</h1>
+      </div>
+    </div>
+    <div class="container-right">
+      <div class="search">
+        <svg version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+          width="20px" height="20px" viewBox="0 0 512 512" xml:space="preserve" fill="#000000" transform="rotate(270)">
+          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+          <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+          <g id="SVGRepo_iconCarrier">
+            <style type="text/css">
+              .st0 {
+                fill: #cfcfcf;
+              }
+            </style>
+            <g>
+              <path class="st0"
+                d="M449.803,62.197C408.443,20.807,353.85-0.037,299.646-0.006C245.428-0.037,190.85,20.807,149.49,62.197 C108.1,103.557,87.24,158.15,87.303,212.338c-0.047,37.859,10.359,75.766,30.547,109.359L15.021,424.525 c-20.016,20.016-20.016,52.453,0,72.469c20,20.016,52.453,20.016,72.453,0L190.318,394.15 c33.578,20.203,71.5,30.594,109.328,30.547c54.203,0.047,108.797-20.797,150.156-62.188 c41.375-41.359,62.234-95.938,62.188-150.172C512.053,158.15,491.178,103.557,449.803,62.197z M391.818,304.541 c-25.547,25.531-58.672,38.125-92.172,38.188c-33.5-0.063-66.609-12.656-92.188-38.188c-25.531-25.578-38.125-58.688-38.188-92.203 c0.063-33.484,12.656-66.609,38.188-92.172c25.578-25.531,58.688-38.125,92.188-38.188c33.5,0.063,66.625,12.656,92.188,38.188 c25.531,25.563,38.125,58.688,38.188,92.172C429.959,245.854,417.365,278.963,391.818,304.541z">
+              </path>
+            </g>
+          </g>
+        </svg>
+      </div>
+      <div class="cart">
+        <svg width="20px" height="20px" viewBox="0 -1 24 24" id="meteor-icon-kit__regular-shopping-cart" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+          <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+          <g id="SVGRepo_iconCarrier">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M7.83398 19.986C7.42604 21.1583 6.31124 21.9996 4.99992 21.9996C3.34309 21.9996 1.99997 20.6565 1.99997 18.9997C1.99997 17.6027 2.95482 16.4288 4.24746 16.0949L4.69032 14.7663C3.68243 14.3426 2.94957 13.3832 2.86086 12.2299L2.15631 3.07074C2.10983 2.46652 1.60599 1.99995 0.999985 1.99995C0.447708 1.99995 0 1.55225 0 0.99997C0 0.44769 0.447708 -0.000015 0.999985 -0.000015C2.65105 -0.000015 4.02375 1.27115 4.15038 2.91735L22.9996 2.94455C23.6303 2.94455 24.1034 3.52112 23.9804 4.13961L22.3006 12.585C22.0214 13.9887 20.7895 14.9998 19.3583 14.9998H6.72066L6.29035 16.2907C7.00898 16.6336 7.56976 17.2541 7.83398 18.0134C7.88794 18.0044 7.94336 17.9997 7.99988 17.9997H16.1705C16.5823 16.8345 17.6935 15.9997 18.9997 15.9997C20.6565 15.9997 21.9997 17.3429 21.9997 18.9997C21.9997 20.6565 20.6565 21.9996 18.9997 21.9996C17.6935 21.9996 16.5823 21.1649 16.1705 19.9997H7.99988C7.94336 19.9997 7.88794 19.995 7.83398 19.986zM4.98347 17.9998C4.43878 18.0086 3.99994 18.4529 3.99994 18.9997C3.99994 19.552 4.44765 19.9997 4.99992 19.9997C5.5522 19.9997 5.99991 19.552 5.99991 18.9997C5.99991 18.453 5.56114 18.0087 5.01652 17.9998C5.00552 18 4.99451 18 4.98347 17.9998zM6.02297 12.9998H19.3583C19.8354 12.9998 20.246 12.6628 20.3391 12.1949L21.7812 4.94452H4.30632L4.85493 12.0765C4.89501 12.5975 5.32944 12.9998 5.85197 12.9998H5.97657C5.99199 12.9994 6.00746 12.9994 6.02297 12.9998zM18.9997 19.9997C19.552 19.9997 19.9997 19.552 19.9997 18.9997C19.9997 18.4474 19.552 17.9997 18.9997 17.9997C18.4474 17.9997 17.9997 18.4474 17.9997 18.9997C17.9997 19.552 18.4474 19.9997 18.9997 19.9997z"
+              fill="#c9c9c9"></path>
+          </g>
+        </svg>
+      </div>
+      <div class="login">
+        <h1>Login</h1>
+      </div>
+      <div class="signup">
+        <h1>Sign Up</h1>
+      </div>
+    </div>
+  </header>
+
+  <section class="left1">
+    <div class="screenleft">
+      <div class="mycart">
+        <h1>My Cart</h1>
+      </div>
+      <div class="item1">
+        <div class="delete1"><svg width="20px" height="15px" viewBox="0 0 24 24" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+            <g id="SVGRepo_iconCarrier">
+              <path d="M20.5001 6H3.5" stroke="#00bd1f" stroke-width="1.5" stroke-linecap="round"></path>
+              <path
+                d="M18.8332 8.5L18.3732 15.3991C18.1962 18.054 18.1077 19.3815 17.2427 20.1907C16.3777 21 15.0473 21 12.3865 21H11.6132C8.95235 21 7.62195 21 6.75694 20.1907C5.89194 19.3815 5.80344 18.054 5.62644 15.3991L5.1665 8.5"
+                stroke="#00bd1f" stroke-width="1.5" stroke-linecap="round"></path>
+              <path d="M9.5 11L10 16" stroke="#00bd1f" stroke-width="1.5" stroke-linecap="round"></path>
+              <path d="M14.5 11L14 16" stroke="#00bd1f" stroke-width="1.5" stroke-linecap="round"></path>
+              <path
+                d="M6.5 6C6.55588 6 6.58382 6 6.60915 5.99936C7.43259 5.97849 8.15902 5.45491 8.43922 4.68032C8.44784 4.65649 8.45667 4.62999 8.47434 4.57697L8.57143 4.28571C8.65431 4.03708 8.69575 3.91276 8.75071 3.8072C8.97001 3.38607 9.37574 3.09364 9.84461 3.01877C9.96213 3 10.0932 3 10.3553 3H13.6447C13.9068 3 14.0379 3 14.1554 3.01877C14.6243 3.09364 15.03 3.38607 15.2493 3.8072C15.3043 3.91276 15.3457 4.03708 15.4286 4.28571L15.5257 4.57697C15.5433 4.62992 15.5522 4.65651 15.5608 4.68032C15.841 5.45491 16.5674 5.97849 17.3909 5.99936C17.4162 6 17.4441 6 17.5 6"
+                stroke="#00bd1f" stroke-width="1.5"></path>
+            </g>
+          </svg></div>
+        <div class="app1"><img src="./app1.png" width="300px" height="175px" alt="JConsul"></div>
+        <div class="select1">
+          <label for="subscription">Subscription</label>
+          <select id="subscription" name="subscription">
+            <option value="1-month">1 Month</option>
+            <option value="3-month">3 Months</option>
+            <option value="6-month">6 Months</option>
+            <option value="12-month">12 Months</option>
+          </select>
+          <div class="pricesub">500 THB</div>
+        </div>
+      </div>
+      <div class="item2">
+        <div class="delete2"><svg width="20px" height="15px" viewBox="0 0 24 24" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+            <g id="SVGRepo_iconCarrier">
+              <path d="M20.5001 6H3.5" stroke="#00bd1f" stroke-width="1.5" stroke-linecap="round"></path>
+              <path
+                d="M18.8332 8.5L18.3732 15.3991C18.1962 18.054 18.1077 19.3815 17.2427 20.1907C16.3777 21 15.0473 21 12.3865 21H11.6132C8.95235 21 7.62195 21 6.75694 20.1907C5.89194 19.3815 5.80344 18.054 5.62644 15.3991L5.1665 8.5"
+                stroke="#00bd1f" stroke-width="1.5" stroke-linecap="round"></path>
+              <path d="M9.5 11L10 16" stroke="#00bd1f" stroke-width="1.5" stroke-linecap="round"></path>
+              <path d="M14.5 11L14 16" stroke="#00bd1f" stroke-width="1.5" stroke-linecap="round"></path>
+              <path
+                d="M6.5 6C6.55588 6 6.58382 6 6.60915 5.99936C7.43259 5.97849 8.15902 5.45491 8.43922 4.68032C8.44784 4.65649 8.45667 4.62999 8.47434 4.57697L8.57143 4.28571C8.65431 4.03708 8.69575 3.91276 8.75071 3.8072C8.97001 3.38607 9.37574 3.09364 9.84461 3.01877C9.96213 3 10.0932 3 10.3553 3H13.6447C13.9068 3 14.0379 3 14.1554 3.01877C14.6243 3.09364 15.03 3.38607 15.2493 3.8072C15.3043 3.91276 15.3457 4.03708 15.4286 4.28571L15.5257 4.57697C15.5433 4.62992 15.5522 4.65651 15.5608 4.68032C15.841 5.45491 16.5674 5.97849 17.3909 5.99936C17.4162 6 17.4441 6 17.5 6"
+                stroke="#00bd1f" stroke-width="1.5"></path>
+            </g>
+          </svg></div>
+        <div class="app2"><img src="./app2.png" width="300px" height="175px" alt="JDoit"></div>
+        <div class="select2">
+          <label for="doit">Web Service</label>
+          <select id="doit" name="doit">
+            <option value="1-time">1 Website</option>
+            <option value="3-time">3 Websites</option>
+            <option value="6-time">6 Websites</option>
+            <option value="12-time">12 Websites</option>
+          </select>
+          <div class="doprice">500 THB</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="right2">
+    <div class="screenright">
+      <div class="order-screen">
+        <div class="order-info">
+          <h2>Order Info</h2>
+          <div class="subtotal">
+            <h3>Subtotal</h3>
+            <h4>1,000 THB</h4>
+          </div>
+          <div class="promotion">
+            <div class="code-logo"><svg width="30px" height="30px" viewBox="0 0 24 24" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                <g id="SVGRepo_iconCarrier">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M3.75 6.75L4.5 6H20.25L21 6.75V10.7812H20.25C19.5769 10.7812 19.0312 11.3269 19.0312 12C19.0312 12.6731 19.5769 13.2188 20.25 13.2188H21V17.25L20.25 18L4.5 18L3.75 17.25V13.2188H4.5C5.1731 13.2188 5.71875 12.6731 5.71875 12C5.71875 11.3269 5.1731 10.7812 4.5 10.7812H3.75V6.75ZM5.25 7.5V9.38602C6.38677 9.71157 7.21875 10.7586 7.21875 12C7.21875 13.2414 6.38677 14.2884 5.25 14.614V16.5L9 16.5L9 7.5H5.25ZM10.5 7.5V16.5L19.5 16.5V14.614C18.3632 14.2884 17.5312 13.2414 17.5312 12C17.5312 10.7586 18.3632 9.71157 19.5 9.38602V7.5H10.5Z"
+                    fill="#00bd1f"></path>
+                </g>
+              </svg>
+            </div>
+            <div class="promofield">
+              <input type="text" id="coupon" name="coupon" placeholder="Promotional Code">
+            </div>
+            <div class="apply-button">
+              <input type="button" value="APPLY">
+            </div>
+          </div>
+        </div>
+        <div class="totalpayment">
+          <div class="total">
+            <h2>Total Payment</h2>
+            <h1>1,000 THB</h1>
+          </div>
+          <div class="login-checkout">
+            <h1>Login to Checkout</h1>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+</body>
+
+</html>
